@@ -1,0 +1,133 @@
+body{
+    font-family: Hanken Grotesk, sans-serif;
+    background-color: hsl(221, 100%, 96%);
+   
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: hsl(221, 100%, 96%);
+    margin-top: 0px;
+}
+
+p{
+    font-size: 18px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 100%;
+    max-width: fit-content;
+    max-height: fit-content;
+    height: 100vh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.result-section{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    max-width: auto;
+    min-width: 350px;
+}
+
+.overall-score{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient( hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)
+);
+}
+
+.overall-score-span{
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 4px;
+}
+
+.percent{
+    color: hsla(221, 100%, 96%, 0.4);
+}
+
+p.great{
+    font-weight: 900;
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+p.note{
+    text-align: center;
+    text-wrap: wrap;
+    line-height: 1.5;
+    max-width: 250px;
+    color: hsla(221, 100%, 96%, 0.7);
+}
+
+.summary-section{
+    display: grid;
+    grid-template-columns: 1fr;
+   
+    gap: 10px;
+    padding: 30px;
+    background: hsl(0, 0%, 100%);
+    color: black;
+    max-width: auto;
+    min-width: 350px;
+}
+
+img{
+    max-width: 30px;
+    margin: 0px;
+}
+
+.stat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    border-radius: 13px;
+    
+}
+
+.stat > p{
+    display: inline;
+    margin: 0px 5px;
+    
+}
+
+.stat div{
+    display: flex;
+}
+
+.stat div > p {
+    margin-left: 10px;
+}
+
+.stat p span{
+    color: rgba(22, 23, 26, 0.4);
+}
+
+button{
+    padding: 20px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    font-family: sans-serif;
+}
