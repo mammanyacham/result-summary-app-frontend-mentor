@@ -28,10 +28,16 @@ export default function Result() {
                 <p className="note">You scored higher than 65% of the people who have taken these tests.</p>
             </section>
 
+
             <section className="summary-section">
-                <h2>Summary</h2>
-                {categories}
-                <button>Continue</button>  
+                <div className="h2-div">
+                    <h2>Summary</h2>
+                </div>
+                
+                     {categories}
+                    <div className="button-div">
+                        <button>Continue</button>  
+                    </div>
             </section>
             
         </div>
