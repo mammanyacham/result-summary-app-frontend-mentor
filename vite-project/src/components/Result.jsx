@@ -1,13 +1,23 @@
 import data from "/src/data.json"
 import Stats from "./Stats"
+import iconReaction from "/images/icon-reaction.svg";
+import iconMemory from "/images/icon-memory.svg";
+import iconVerbal from "/images/icon-verbal.svg";
+import iconVisual from "/images/icon-visual.svg";
+import data from "/src/data.json";
 
 export default function Result() {
 
-    
+const iconMap = {
+  reaction: iconReaction,
+  memory: iconMemory,
+  verbal: iconVerbal,
+  visual: iconVisual
+};
 
     const categories = data.map(dat => 
     <Stats 
-        icon={dat.icon}
+        icon={iconMap[dat.icon]}
         category={dat.category}
         score={dat.score}
         color={dat.color}
